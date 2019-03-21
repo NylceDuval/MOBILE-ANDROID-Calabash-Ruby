@@ -1,0 +1,16 @@
+<%
+date = Time.now.strftime('%m_%d_%H_%M_%S')
+Dir.mkdir("./reports/") unless File.exists?("./reports/")
+Dir.mkdir("./reports/cucumber_json/") unless File.exists?("./reports/cucumber_json/")
+Dir.mkdir("./reports/screenshots/") unless File.exists?("./reports/screenshots/")
+Dir.mkdir("./resources") unless File.exists?("./resources")
+default_report = "./reports/cucumber_json/output.json"
+default_rerun = "./resources/rerun.txt"
+%>
+
+common: NO_STOP=1 RESET_BETWEEN_SCENARIOS=1 STEP_PAUSE=2 SCREENSHOT_PATH="./reports/screenshots/"
+rerun_out: -f rerun -o <%= default_rerun %>
+json_report:  -f json -o <%= default_report %>
+profiles:  -p common -p rerun_out -f pretty -p json_report
+
+android: PLATFORM=android -p profiles -t @all_platform,@android

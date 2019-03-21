@@ -1,0 +1,447 @@
+[
+  {
+    "uri": "features/cadastro_livro.feature",
+    "id": "cadastro-de-livro",
+    "keyword": "Funcionalidade",
+    "name": "Cadastro de livro",
+    "description": "",
+    "line": 4,
+    "comments": [
+      {
+        "value": "# enconding: utf-8",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "id": "cadastro-de-livro;cadastrar-novo-livro",
+        "keyword": "Cenario",
+        "name": "Cadastrar novo livro",
+        "description": "",
+        "line": 7,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@android",
+            "line": 6
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/app_installation_hooks.rb:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7390875764
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "eu deveria ver \"Cadastrar um novo livro\"",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/canned_steps/assert_canned_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37547698
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000146342
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "Quando ",
+            "name": "eu entro o texto \"Harry Potter e a Pedra Filosofal\" no campo com id \"title_field\"",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/canned_steps/input_canned_steps.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1075604676
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000157696
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "E ",
+            "name": "eu entro o texto \"J. K. Rowling\" no campo com id \"author_field\"",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/canned_steps/input_canned_steps.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1041661245
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000160534
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "E ",
+            "name": "eu entro o texto \"Rocco\" no campo com id \"publishing_field\"",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/canned_steps/input_canned_steps.rb:2"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1053285432
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000245293
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "E ",
+            "name": "eu entro o numero \"2017\" no campo com id \"year_field\"",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/cadastro_livro_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1007137204
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000268749
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "E ",
+            "name": "eu entro o numero \"208\" no campo com id \"pages_field\"",
+            "line": 13,
+            "match": {
+              "location": "features/step_definitions/cadastro_livro_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 930024697
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000186950
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "E ",
+            "name": "eu pressiono o botao \"Salvar\"",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/canned_steps/touching_canned_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 329707854
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000131746
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "Então ",
+            "name": "eu deveria ver \"Título:\"",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/canned_steps/assert_canned_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79585233
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000191618
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "E ",
+            "name": "eu deveria ver \"Harry Potter e a Pedra Filosofal\"",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/canned_steps/assert_canned_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58687179
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000214764
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "E ",
+            "name": "eu deveria ver \"Autor:\"",
+            "line": 17,
+            "match": {
+              "location": "features/step_definitions/canned_steps/assert_canned_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35901601
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000757884
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "E ",
+            "name": "eu deveria ver \"J. K. Rowling\"",
+            "line": 18,
+            "match": {
+              "location": "features/step_definitions/canned_steps/assert_canned_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18187816
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000189775
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "E ",
+            "name": "eu deveria ver \"Editora:\"",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/canned_steps/assert_canned_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49003831
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000153900
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "E ",
+            "name": "eu deveria ver \"Rocco\"",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/canned_steps/assert_canned_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27028717
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000244225
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "E ",
+            "name": "eu deveria ver \"Ano de publicação:\"",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/canned_steps/assert_canned_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26888899
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000154867
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "E ",
+            "name": "eu deveria ver \"2017\"",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/canned_steps/assert_canned_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34331140
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000112822
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "E ",
+            "name": "eu deveria ver \"Número de páginas:\"",
+            "line": 23,
+            "match": {
+              "location": "features/step_definitions/canned_steps/assert_canned_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27361768
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000143207
+                }
+              }
+            ]
+          },
+          {
+            "keyword": "E ",
+            "name": "eu deveria ver \"208\"",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/canned_steps/assert_canned_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47774457
+            },
+            "after": [
+              {
+                "match": {
+                  "location": "features/support/hooks.rb:1"
+                },
+                "result": {
+                  "status": "passed",
+                  "duration": 2000189080
+                }
+              }
+            ]
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/app_installation_hooks.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16072812
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
