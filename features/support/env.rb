@@ -3,11 +3,8 @@ require 'report_builder'
 @projects = JSON.parse(File.read("#{Dir.pwd}/dependencies.json"))
 
 def require_platform
-  if ENV['PLATFORM'] == 'ios'
-    require 'calabash-cucumber/cucumber'
-  elsif ENV['PLATFORM'] == 'android'
+    ENV['PLATFORM'] == 'android'
     require 'calabash-android/cucumber'
-  end
 end
 
 def require_support
